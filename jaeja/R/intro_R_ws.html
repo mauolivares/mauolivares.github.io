@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Assignment</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: #990073
+   }
+
+   pre .number {
+     color: #099;
+   }
+
+   pre .comment {
+     color: #998;
+     font-style: italic
+   }
+
+   pre .keyword {
+     color: #900;
+     font-weight: bold
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: #d14;
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 13px;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 20px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+   font-size:2.2em;
+}
+
+h2 {
+   font-size:1.8em;
+}
+
+h3 {
+   font-size:1.4em;
+}
+
+h4 {
+   font-size:1.0em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre, img {
+  max-width: 100%;
+}
+pre {
+  overflow-x: auto;
+}
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code {
+  font-size: 92%;
+  border: 1px solid #ccc;
+}
+
+code[class] {
+  background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * {
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+
+   hr {
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote {
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img {
+      page-break-inside: avoid;
+   }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+   }
+
+   @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<p>This page is adapted from Prof. Koenker&#39;s e-TA pages and his rather concise yet hilarious <a href="http://www.econ.uiuc.edu/%7Elab/workshop/yaRfaq.pdf">Yet Another R FAQ, or How I Learned to Stop Worrying and Love Computing</a>.</p>
+
+<p>#First steps in R
+Having installed R the next step is learning the <em>syntax</em> of the language, this means learning the rules of it. After you open R GUI or R Studio you are going to see the R console, which displays the results of your analysis or any messages associated with your code that is entered in the command line (after the arrow &ldquo;&gt;&rdquo;). </p>
+
+<p>For example, we can use R as a calculator. You can type arithmetical expressions at the prompt (&ldquo;&gt;&rdquo;):</p>
+
+<pre><code class="r">    2 + 2
+</code></pre>
+
+<pre><code>[1] 4
+</code></pre>
+
+<p>or</p>
+
+<pre><code class="r">    log(1)
+</code></pre>
+
+<pre><code>[1] 0
+</code></pre>
+
+<p>The [1] indicates that it is the first result from the command, and in this case the only one. You can also type something  with multiple values for example a sequence of integers from 10 to 40: </p>
+
+<pre><code class="r">    10:40
+</code></pre>
+
+<pre><code> [1] 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32
+[24] 33 34 35 36 37 38 39 40
+</code></pre>
+
+<p>The first line starts with the first return value, so is labeled [1]; the second line starts with the 24th, so is labeled [24].</p>
+
+<p>To quit you session just type</p>
+
+<pre><code class="r">    q()
+</code></pre>
+
+<p>##Scripting your work</p>
+
+<p>Rather than saving the work space, it is highly recommended that you keep a record of the commands entered, so that we can reproduce it at a later date. The easiest way to do this is to enter commands in R&#39;??s script editor, available from the File menu. Commands are executed by highlighting them and hitting Ctrl-R. At the end of a session, save the final script for a permanent record of your work. You can also use any text editor to do so. 
+In R Studio the script editor opens next to the console and the mechanics is the same. Commands are executed by highlighting them and hitting Ctrl-Enter.</p>
+
+<p>A <em>script</em> is a text file that contains lines of R code that can be saved and use over and over again. This is the preferred method to save your work and guarantee reproducibility. To know more on reproducible research you should read Professor Koenker&#39;s <a href="http://www.econ.illinois.edu/%7Eroger/repro.html">Reproducibility in Econometrics Research webpage</a></p>
+
+<p>A useful tip to keep in mind is that everything that is written after a # sign is assumed to be a comment and is ignored by R.</p>
+
+<h2>Assignment</h2>
+
+<p>R has a work space known as <em>global enviroment</em> where you can store your objects. For example, suppose we would like to store the calculation <em>sqrt(2)</em> for future use. To do this type:</p>
+
+<pre><code class="r">    x &lt;- sqrt(2)
+</code></pre>
+
+<p>Now x holds the result of such operation. To see this type</p>
+
+<pre><code class="r">    x
+</code></pre>
+
+<pre><code>[1] 1.414214
+</code></pre>
+
+<p>Now we can use <em>x</em> to do any operations. For example</p>
+
+<pre><code class="r">    x+x
+</code></pre>
+
+<pre><code>[1] 2.828427
+</code></pre>
+
+<pre><code class="r">    x*x
+</code></pre>
+
+<pre><code>[1] 2
+</code></pre>
+
+<h1>Class of an Object</h1>
+
+<p>All objects in R have a <em>class</em>, reported by the function <code>class</code>. For simple vectors we have for example <code>numeric</code>, <code>logical</code>, <code>character</code> or <code>list</code>, but <code>matrix</code>, <code>array</code>, <code>facto</code> and <code>data.frame</code> are other possible classes for objects.</p>
+
+<p>The <em>class</em> of the object is used to allow for an object-oriented style 4 of programming in R. For example if an object has class <code>data.frame</code>, it will be printed in a certain way, the <code>plot()</code> function will display it graphically in a certain way, and other
+so-called generic functions such as <code>summary()</code> will react to it as an argument in a way sensitive to its class.</p>
+
+<p>#Vectors</p>
+
+<p>You can also enter vectors. The <code>c()</code> function creates a vector. For example:</p>
+
+<pre><code class="r">    weight &lt;- c(65,45,67,78,56)
+</code></pre>
+
+<p>Creates a vector containing the numbers 65, 45, 67, 78 and 56, we can see the contented by typing</p>
+
+<pre><code class="r">    weight
+</code></pre>
+
+<pre><code>[1] 65 45 67 78 56
+</code></pre>
+
+<p>You can also check the length of the vector</p>
+
+<pre><code class="r">   length(weight)
+</code></pre>
+
+<pre><code>[1] 5
+</code></pre>
+
+<p>It is possible to do some arithmetic computations, for example multiply all elements by 3</p>
+
+<pre><code class="r">    weight*3
+</code></pre>
+
+<pre><code>[1] 195 135 201 234 168
+</code></pre>
+
+<p>or calculate a simple formula like</p>
+
+<pre><code class="r">    height &lt;- c(1.7,1.8,1.76,1.65,1.74)
+
+    bmi &lt;- weight/height^2
+
+    bmi
+</code></pre>
+
+<pre><code>[1] 22.49135 13.88889 21.62965 28.65014 18.49650
+</code></pre>
+
+<p>First that we created a new vector that contains heights, and then calculated the body mass index. Note that the division is done entry wise.</p>
+
+<h1>Matrices and Arrays</h1>
+
+<p>To arrange numbers in a matrix, we can use the matrix function</p>
+
+<pre><code class="r">    x&lt;-matrix(1:12,nrow=3, ncol=4)
+    x
+</code></pre>
+
+<pre><code>     [,1] [,2] [,3] [,4]
+[1,]    1    4    7   10
+[2,]    2    5    8   11
+[3,]    3    6    9   12
+</code></pre>
+
+<p>or we can create a sequence of numbers and assign dimensions to it</p>
+
+<pre><code class="r">    x &lt;- 1:12
+    x
+</code></pre>
+
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10 11 12
+</code></pre>
+
+<pre><code class="r">    dim(x) &lt;- c(3,4)
+    x
+</code></pre>
+
+<pre><code>     [,1] [,2] [,3] [,4]
+[1,]    1    4    7   10
+[2,]    2    5    8   11
+[3,]    3    6    9   12
+</code></pre>
+
+<p>Observe that either way R fills the matrix by column, not by row. We can modify this with the option 
+<em>byrow</em> </p>
+
+<pre><code class="r">    x&lt;-matrix(1:12,nrow=3, ncol=4, byrow = TRUE)
+    x
+</code></pre>
+
+<pre><code>     [,1] [,2] [,3] [,4]
+[1,]    1    2    3    4
+[2,]    5    6    7    8
+[3,]    9   10   11   12
+</code></pre>
+
+<p>We can assign names to the rows. For example, we assign the three first letters</p>
+
+<pre><code class="r">    rownames(x) &lt;- LETTERS[1:3]
+    x
+</code></pre>
+
+<pre><code>  [,1] [,2] [,3] [,4]
+A    1    2    3    4
+B    5    6    7    8
+C    9   10   11   12
+</code></pre>
+
+<p>Another useful operations are: </p>
+
+<table><thead>
+<tr>
+<th align="center">Operator or Function</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center"><code>A * B</code></td>
+<td>Element-wise multiplication</td>
+</tr>
+<tr>
+<td align="center"><code>A %*% B</code></td>
+<td>Matrix multiplication</td>
+</tr>
+<tr>
+<td align="center"><code>A %o% B</code></td>
+<td>Outer product. AB&#39;</td>
+</tr>
+<tr>
+<td align="center"><code>t(A)</code></td>
+<td>Transpose</td>
+</tr>
+<tr>
+<td align="center"><code>diag(x)</code></td>
+<td>Creates diagonal matrix with elements of x in the principal diagonal</td>
+</tr>
+<tr>
+<td align="center"><code>solve(A, b)</code></td>
+<td>Returns vector x in the equation b = Ax (i.e., A-1b)</td>
+</tr>
+<tr>
+<td align="center"><code>solve(A)</code></td>
+<td>Inverse of A where A is a square matrix.</td>
+</tr>
+<tr>
+<td align="center"><code>cbind(A,B,...)</code></td>
+<td>Combine matrices(vectors) horizontally. Returns a matrix.</td>
+</tr>
+<tr>
+<td align="center"><code>rbind(A,B,...)</code></td>
+<td>Combine matrices(vectors) vertically. Returns a matrix.</td>
+</tr>
+<tr>
+<td align="center"><code>rowMeans(A)</code></td>
+<td>Returns vector of row means.</td>
+</tr>
+<tr>
+<td align="center"><code>rowSums(A)</code></td>
+<td>Returns vector of row sums.</td>
+</tr>
+<tr>
+<td align="center"><code>colMeans(A)</code></td>
+<td>Returns vector of column means.</td>
+</tr>
+<tr>
+<td align="center"><code>colSums(A)</code></td>
+<td>Returns vector of column means.</td>
+</tr>
+</tbody></table>
+
+<p>(taken from <a href="http://www.statmethods.net/advstats/matrix.html">Quick-R</a>)</p>
+
+<h1>Indexing</h1>
+
+<p>Individual elements of an array can be referenced by the name of the array followed by the subscripts in square brackets, and separated by commas. For example:</p>
+
+<pre><code class="r">    x&lt;-matrix(1:12,nrow=3,ncol=4)
+    x[,1]
+</code></pre>
+
+<pre><code>[1] 1 2 3
+</code></pre>
+
+<p>refers to the first column of x. </p>
+
+<pre><code class="r">    x[1,]
+</code></pre>
+
+<pre><code>[1]  1  4  7 10
+</code></pre>
+
+<p>and refers to the first row. If we type</p>
+
+<pre><code class="r">    x[,1:2]
+</code></pre>
+
+<pre><code>     [,1] [,2]
+[1,]    1    4
+[2,]    2    5
+[3,]    3    6
+</code></pre>
+
+<p>we get the first two columns of x. But if we type</p>
+
+<pre><code class="r">    x[,c(2,4)]
+</code></pre>
+
+<pre><code>     [,1] [,2]
+[1,]    4   10
+[2,]    5   11
+[3,]    6   12
+</code></pre>
+
+<p>we obtain the second and forth column of x. We can also subset using another vector, for example:</p>
+
+<pre><code class="r">    weight[height&gt;1.7]
+</code></pre>
+
+<pre><code>[1] 45 67 56
+</code></pre>
+
+<p>gets those elements in weight that have a corresponding element in height bigger than 1.7</p>
+
+<h1>Lists and Data Frames</h1>
+
+<p>An R <em>list</em> is an object consisting of an ordered collection of objects known as its <em>components</em>.</p>
+
+<p>There is no particular need for the components to be of the same mode or type, and, for
+example, a list could consist of a numeric vector, a logical value, a matrix, a complex vector, a
+character array, a function, and so on. Here is a simple example of how to make a list:</p>
+
+<pre><code class="r">    Lst &lt;- list(ta.name=&quot;Mauricio&quot;, professor=&quot;Eunyi&quot;, no.students=3,
+    stud.ages=c(24,21,25))
+</code></pre>
+
+<p>Components are always <em>numbered</em> and may always be referred to as such. Thus if <code>Lst</code> is
+the name of a list with four components, these may be individually referred to as <code>Lst[[1]]</code>,
+<code>Lst[[2]]</code>,<code>Lst[[3]]</code> and so forth. If, further, <code>Lst[[4]]</code> is a vector subscripted array then
+<code>Lst[[4]][1]</code> is its first entry</p>
+
+<pre><code class="r">    Lst[[4]][1]
+</code></pre>
+
+<pre><code>[1] 24
+</code></pre>
+
+<p>If <code>Lst</code> is a list, then the function <code>length(Lst)</code> gives the number of (top level) components
+it has.</p>
+
+<p>Components of lists may also be <em>named</em>. This is a very useful convention as it makes it easier to get the right component if you forget the number. For instance</p>
+
+<pre><code class="r">    Lst$ta.name
+</code></pre>
+
+<pre><code>[1] &quot;Mauricio&quot;
+</code></pre>
+
+<p>is the same as</p>
+
+<pre><code class="r">    Lst[[1]]
+</code></pre>
+
+<pre><code>[1] &quot;Mauricio&quot;
+</code></pre>
+
+<p>Finally, a <em>data frame</em> is a list with class <code>data.frame</code>. Data frames can easily be made using the function <code>data.frame</code></p>
+
+<pre><code class="r">    my.frame &lt;- data.frame(name=c(&quot;Mau&quot;,&quot;Eunyi&quot;),grade=c(59,99))
+    my.frame
+</code></pre>
+
+<pre><code>   name grade
+1   Mau    59
+2 Eunyi    99
+</code></pre>
+
+<h1>Isn’t there more to R? Packages</h1>
+
+<p>The potential of R is driven by its large collection of <em>packages</em> (12,236 available packages on CRAN as of March 2018). A package is a collection of R software that augments in some way the basic functionality of R, that is it is a way of going “beyond R.” For instance, <strong>quantreg</strong> package is a collection of functions to do quantile regression. Try downloading <strong>quantreg</strong> using</p>
+
+<pre><code class="r">    install.packages(&quot;quantreg&quot;)
+</code></pre>
+
+<pre><code>TRUE Error in install.packages : Updating loaded packages
+</code></pre>
+
+<p>Downloading and installing a package isn’t enough, you need to tell R that you would like to use it, for this you can either type: </p>
+
+<pre><code class="r">    require(quantreg)
+</code></pre>
+
+<h1>Manuals and Illustrations</h1>
+
+<p>Needless to say, there are tons on manuals and illustration for for R functions, as well as a strong and large community of users. The left side of the CRAN website has links to manuals , FAQs and contributed
+documentation. </p>
+
+<p>A strength of R is the fact that most of the documentation files for R functions have example code that can be easily executed. Thus, for example if you would like to see an example of how to use the command <code>rq</code> in the <strong>quantreg</strong> package you can type <code>example(rq)</code> and you will see some examples of its use. Similarly, many packages have <em>demo</em> files that act as auxiliary documentation. To see what demos are available for currently loaded packages, just try <code>demos()</code></p>
+
+<p>Finally, many packages have <em>vignettes</em>, short overviews of various aspects of the functionality of the
+package usually with explicit examples of how to do things. For example, the <strong>quantreg</strong> package has three vignettes: one basic, one about survival modeling, and one about additive nonparametric models. Vignettes can be accessed from R by simply typing <code>vignette(&quot;vname&quot;)</code>. For instance, to acces the <strong>quantreg</strong> vignette, just type</p>
+
+<pre><code class="r">    vignette(&quot;rq&quot;)
+</code></pre>
+
+<p>The names of the various package vignettes can be found by typing <code>vignette()</code>.</p>
+
+<h1>Community</h1>
+
+<p>At some point in your work you&#39;re going to have questions, but R is extremely well supported. If you have a question you just can google it, post it to <a href="http://stackoverflow.com/">StackOverflow</a>, <a href="http://stats.stackexchange.com/questions/tagged/r">Cross Validated</a> or use <a href="http://www.r-bloggers.com/">R-blogger</a>. If you are not convinced yet, just can type “why use the R language”&quot; in Google and I think the results will speak by themselves.</p>
+
+<p>I encourage you to visit these outlets. You can learn quite a bit by surfing these forums and reading the questions &amp; answers of others. Just one final thought on etiquette: when posting to the forums you can save yourself from being flamed by following a few simple rules. If you need help with code, post the code and the output. Also, given the geeky topic, this is not the place for open ended &ldquo;which do you like best&hellip;&rdquo; type posts. Stay on topic.</p>
+
+</body>
+
+</html>
