@@ -4,3 +4,4 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 plugins:
   - jekyll-sitemap
+google_analytics: UA-129893959-1
