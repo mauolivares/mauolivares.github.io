@@ -368,9 +368,9 @@ img {
 }
 
 .img-circle {
-  width: 90%;
-  height: 90%;
-  border-radius: 60%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
 }
 
 hr {
