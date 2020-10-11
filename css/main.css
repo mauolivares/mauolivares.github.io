@@ -5,6 +5,8 @@ body {
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     list-style: none;
     font-weight: bold;
 }
@@ -44,4 +46,6 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
