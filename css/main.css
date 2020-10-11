@@ -45,4 +45,5 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+    margin: 20px 0;
 }
