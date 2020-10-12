@@ -11,14 +11,62 @@ description: Mauricio's Software.
 <div class="row marketing">
 				<div>
 				<span itemprop="rpackages"><h1>R Packages</h1></span>
+
+				<h3><a href="https://cran.r-project.org/web/packages/RATest/index.html">RATest</a>: A collection of permutation tests</h3>
 					
-				<p><em><a href="https://cran.r-project.org/web/packages/RATest/index.html">RATest</a></em>: A collection of permutation tests (Joint with <a href="https://ignaciomsarmiento.github.io/">Ignacio Sarmiento Barbieri</a>)</p>
+				<p>Joint with <a href="https://ignaciomsarmiento.github.io/">Ignacio Sarmiento Barbieri</a>.</p>
 
-				<p><strong>Description:</strong> A collection of randomization tests, data sets and examples. This version considers three main testing problems. The first one concerns with the general testing problem of comparisons of parameters between 2 or more populations, e.g. comparison of means, medians or variances, as well as parameters that depend on the joint
-				distribution of populations as in <em><a href="https://projecteuclid.org/euclid.aos/1366138199">Chung and Romano (2013)</a></em>. Second, the description and implementation of a permutation test for testing the continuity assumption of the baseline covariates in the sharp regression discontinuity design (RDD) as in <em><a href="https://academic.oup.com/restud/article/85/3/1577/4583623">Canay and Kamat (2018)</a></em>. Finally, it provides the practitioner with an effortless implementation of a permutation test based on the martingale decomposition of the empirical process for the goodness-of-fit testing problem with an estimated nuisance parameter. An application of this testing problem is the one of testing for heterogeneous treatment effects in a randomized control trial as in <em><a href="/files/HTE_WorkingPaper.pdf">Chung and Olivares (2020)</a></em>.</p>
+				<p><strong>Description:</strong> While permutation tests are known to have attractive properties in finite samples under the so-called randomization hypothesis, this is not the case for a plethora of testing problems that researchers encounter in practice. This R package presents various functions to perform valid permutation-based inference in these scenarios in a straightforward way. 
+				</p>
 
-				<p><strong>Vignettes and Extra Documentation:</strong> Additional information regarding the testing problem of comparison of parameters can be found <a href="/files/permTest.pdf">here</a>. A vignette which illustrates the use of the package in the RDD testing problem is also available <a href="/files/RDperm.pdf">here</a>, and 
-				<a href="https://www.r-bloggers.com/ratest-a-randomization-tests-package-is-available-on-cran/">this</a> really cool tutorial on R-Bloggers written by <a href="https://ignaciomsarmiento.github.io/">Ignacio Sarmiento Barbieri</a> ,the co-creator of RATest.</p>
+				<p> This literature is continuously growing in many exciting directions. Currently, this R package implements the following theoretical developments:
+					<div class="accordion" id="accordionExample">
+  						<div class="card">
+    						<div class="card-header" id="headingOne">
+      						<h2 class="mb-0">
+        						<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          						Two-sample testing problem: means, medians, variances, and beyond.
+        						</button>
+      						</h2>
+    						</div>
+
+    						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      							<div class="card-body">
+        						This is the theory based on <a href="https://projecteuclid.org/euclid.aos/1366138199">Chung and Romano (2013)</a>. Additional information regarding the testing problem of comparison of parameters can be found <a href="/files/permTest.pdf">here</a>
+      							</div>
+    						</div>
+  						</div>
+  						<div class="card">
+    						<div class="card-header" id="headingTwo">
+      						<h2 class="mb-0">
+        						<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          						<i class="accordion_icon fa fa-plus"></i>Regression Discontinuity Design.
+        						</button>
+      						</h2>
+    						</div>
+    						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      							<div class="card-body">
+        						This is an implementation of <a href="https://doi.org/10.1093/restud/rdx062">Canay and Kamat (2018)</a>. This is a permutation test for testing the hypothesis of continuity of the distribution of baseline covariates at the cut-off in regression discontinuity designs. This <a href="/files/RDperm.pdf">vignette</a> illustrates how to apply the permutation test with an empirical illustration based on <a href="https://doi.org/10.1016/j.jeconom.2007.05.004">Lee (2008)</a>. I also recommend <a href="https://www.r-bloggers.com/ratest-a-randomization-tests-package-is-available-on-cran/">this tutorial</a>, written by co-creator <a href="https://ignaciomsarmiento.github.io/">Ignacio Sarmiento Barbieri</a> for R-Bloggers.
+      							</div>
+    						</div>
+  						</div>
+  						<div class="card">
+    						<div class="card-header" id="headingThree">
+      							<h2 class="mb-0">
+        							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          							Testing Heterogeneity in the treatment effect.
+        							</button>
+      							</h2>
+    						</div>
+    						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      							<div class="card-body">
+        						This is <a href="/files/HTE_WorkingPaper.pdf">Chung and Olivares (2020)</a>.
+      							</div>
+    						</div>
+  						</div>
+					</div> 
+
+				</p>
 				
 				
 </div>
