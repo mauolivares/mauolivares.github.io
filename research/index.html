@@ -35,6 +35,19 @@ description: Mauricio Olivares' research page.
 
 				<h3>Working Papers</h3>
 
+				<p style="color:#708090;"><strong>Robust Permutation Test for Equality of Distributions under Covariate-Adaptive Randomization (Job Market Paper)</strong>
+				<br>[<a class="btn btn-link" data-toggle="collapse" href="#WP_REStat" role="button" aria-expanded="false" aria-controls="WP_REStat">
+    			Abstract</a>]&#8287&#8287[&#8287&#8287<a href="/files/JMP_MauricioOlivares.pdf" title="Download Paper as PDF"> PDF </a>&#8287&#8287]&#8287&#8287[&#8287&#8287<a href="/files/SubgroupVariation_Supplement.pdf" title="Download Paper as PDF"> Supplementary Appendix </a>&#8287&#8287]&#8287&#8287[&#8287&#8287<a href="https://cran.r-project.org/web/packages/RATest/index.html" title="R Package"> R Package </a>&#8287&#8287]
+    				<div class="collapse" id="WP_REStat">
+  						<div class="card card-body">
+    						Though stratified randomization achieves more balance on baseline covariates than pure randomization, it does affect the way we conduct inference. This paper considers the classical two-sample goodness-of-fit testing problem in randomized controlled trials when the researcher employs a particular type of stratified randomization&#8212;covariate-adaptive randomization. When testing the null hypothesis of equality of distributions between experimental groups in this setup, we first show that stratification leaves a mark on the test statistic's limit distribution, making it difficult, if not impossible, to obtain critical values.  We instead propose an alternative approach to conducting inference based on a permutation test that <i>i)</i> is asymptotically exact in the sense that the limiting rejection probability under the null hypothesis equals the nominal &#945; level, <i>ii)</i> is applicable under relatively weak assumptions commonly satisfied in practice, and <i>iii)</i> works for randomization schemes that are popular among empirically oriented researchers, such as stratified permuted block randomization. 
+
+							The proposed test's main idea is that by transforming the original statistic by one minus its bootstrap <i>p</i>-value, it becomes asymptotically uniformly distributed on [0,1]. Thus, the transformed test statistic&#8212;also called <i>prepivoted</i>&#8212;has a fixed limit distribution that is free of unknown parameters, effectively removing the effect of stratification. Consequently, a permutation test based on the prepivoted statistic produces a test whose limiting rejection probability equals the nominal level. We present further numerical evidence of the proposed test's advantages in a Monte Carlo exercise, showing our permutation test outperforms the existing alternatives. We illustrate our method's empirical relevance by revisiting a field experiment by <a href="https://doi.org/10.1111/j.1540-5907.2011.00515.x" title="Butler2011">Butler and Broockman (2011)</a> on the effect of race on state legislators' responsiveness to help their constituents register to vote during elections in the United States. Lastly, we provide the companion <a href="https://cran.r-project.org/web/packages/RATest/index.html" title="R Package">R Package</a> package to facilitate and encourage applying our test in empirical research.
+  						</div>
+					</div>
+				</p>
+
+
 				<p style="color:#708090;"><strong>Can Variation in Subgroups's Average Treatment Effects Explain Treatment Effect Heterogeneity? Evidence from a Social Experiment: A Comment</strong>
 				<br>joint with <a href="https://sites.google.com/a/illinois.edu/eunyichung/">EunYi Chung</a>
 				<br><i>Reject &amp; Resubmit </i><b> Review of Economics and Statistics</b>
