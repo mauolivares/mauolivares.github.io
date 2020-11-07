@@ -2314,6 +2314,7 @@ fieldset[disabled] .btn-link {
 .btn-link:focus,
 .btn-link:active {
   border-color: transparent;
+  text-align:justify;
 }
 
 .btn-link:hover,
