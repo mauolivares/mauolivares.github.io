@@ -12,34 +12,32 @@ sitemap: false
 
 # Working Together on Your Research Project
 
-This page explains how I generally approach supervision and how we can make our meetings and communication useful. It is meant as a starting point, not a rigid contract: every project is different, and we can adapt our working arrangement as the research develops.
+This page explains how I generally approach supervision of master's and bachelor's theses at LMU Munich, and how we can make our meetings and communication useful. This is by no means a stringent contract, but more of a starting point. Of course, every student and thesis are unique, and I take that into account when setting expectations and throughout the process.
 
 </div>
 
 ## The basic idea
 
-You own the project. I am here to help you develop it into a focused, rigorous, and feasible piece of research.
+This is your thesis. I am only here to help you develop it and turn it into a complete thesis to sucessfully graduate from your program.
 
-I will not prescribe every step or expect you to work in exactly the way I would. I want you to make decisions, try things, and gradually become more independent. At the same time, independence does not mean working alone when a problem is blocking the project. I may become more directive when a methodological, analytical, or technical issue is likely to affect the quality or feasibility of the thesis.
-
-The aim of that intervention is to help you understand the issue and become able to handle it yourself—not to take ownership of the work away from you.
+I will not micro-manage every step or expect you to work in exactly the way I would. Actually, I want you to make decisions, try things, and gradually become more independent. However, independence does not mean working alone, especially when a problem is blocking the project. With that in mind, I may get more involved when a methodological or technical issue is likely to affect the quality or feasibility of the thesis.
 
 <div class="supervision-callout">
 
-<strong>In short:</strong> you bring initiative and ownership; I provide guidance, feedback, perspective, and closer support when it is most useful.
+<strong>In short:</strong> you own the the project; I provide guidance, feedback, and support when it is most useful.
 
 </div>
 
 ## How we will organize the project
 
-Rather than planning every chapter in advance, we will work with a small number of meaningful milestones. Examples include:
+Rather than planning every chapter in advance, we will work with a small number of reasonable milestones. For instance:
 
-- clarifying the research question and scope;
-- developing the relevant literature or theoretical framework;
-- agreeing on the research design or methodology;
-- preparing the data, materials, or code;
-- producing preliminary analysis or results;
-- developing a complete draft; and
+- clarifying the research question and scope.
+- developing the theoretical framework.
+- agreeing on the research design or methodology.
+- preparing the data, materials, or code.
+- producing preliminary analysis or results.
+- developing a complete draft.
 - revising the thesis for submission.
 
 You will have freedom in how you reach each milestone. We will use our meetings to assess progress, make important decisions, and revise the plan when the research takes an unexpected direction.
@@ -48,57 +46,49 @@ At the beginning of the project, we will agree on a realistic timetable. The tim
 
 ## Meetings
 
-We will normally meet every two weeks, although the appropriate frequency may change with the stage of the project. During a technically demanding phase, we may meet more frequently. When the project is progressing steadily, less frequent meetings may be sufficient.
-
-We will review the arrangement periodically rather than treating it as permanent.
+There is no silver bullet. What has worked for me and former students is to meet roughly every two to three weeks. We may change this at different stages of the thesis, e.g. more often during the more technically demanding part of the project, or less frequently  when the project is progressing steadily.
 
 ### Before each meeting
 
-Please send any material you would like me to read at least **48 hours before the meeting**. Include a short note with:
+Please send any material you would like me to read at least **48 hours before the meeting**. Include a short note with (see template below):
 
-1. what you have worked on since our last meeting;
-2. what changed or what you learned;
-3. what is currently uncertain or difficult; and
-4. the two or three questions you most want us to address.
+1. what you have worked on since our last meeting.
+2. what changed or what you learned.
+3. what is currently uncertain or difficult.
+4. the two or (maximum) three questions you most want me to address.
 
 You do not need to send a complete chapter for every meeting. A specific section, table, figure, proof, piece of code, research design, or description of a problem is often more useful.
 
 If material arrives later, we can still discuss it, but I may not be able to provide detailed comments before the meeting.
 
+I insist on narrowing down the questions to two or three because I have realized that when a student is forced to focus on such a limited number of questions, it is typically the case that the relatively easier questions become evident.
+
 ### During the meeting
 
 We will usually focus on:
 
-- decisions that need to be made;
-- problems that are slowing down the project;
-- the material or questions you sent in advance;
-- the next important milestone; and
-- concrete next steps.
+- decisions that need to be made.
+- problems that are slowing down the project.
+- the questions you sent in advance.
+- concrete next steps (e.g., next important milestone).
 
-Please come prepared to explain not only the problem, but also what you have tried and what you currently think the possible solutions are. You do not need to have solved the problem before bringing it to a meeting.
+Please come prepared to explain not only the problem, but also what you have tried. Needless to say, you do not need to have solved the problem before a meeting. 
 
-### After the meeting
+I want to emphasize that my definition of a good meeting does not require everything to be going well. It requires that we know what is happening, identify what matters most, and agree on what the next steps should be.
 
-Please keep a short record of the main decisions and action points. It is useful to include:
+## Feedback
 
-- what you will do next;
-- what I will do, if anything;
-- any unresolved questions; and
-- the target date for the next milestone.
+I do not normally read a thesis from beginning to end, chapter by chapter, as it is being written. Having done this in the past, I realize this diminishes your ownership and it becomes more tiring for all parties involed. 
 
-This record belongs to you and is part of taking ownership of the project.
+I prefer to focus on the parts where feedback is most useful at that point in the project. Of course, my comments tend to me most valuable on the technical parts of the thesis, but I am here to help with any aspect of the process that may unlock your progress.
 
-## Written work and feedback
+Regardless of the type of help, when sending material, please say what kind of feedback you would like to receive. Here are some ideas:
 
-I do not normally read a thesis from beginning to end, chapter by chapter, as it is being written. I prefer to focus on the parts where feedback is most useful at that point in the project—especially the research question, design, methodology, analysis, interpretation, and sections that are blocking progress.
-
-When sending material, please say what kind of feedback you would like:
-
-- **Conceptual:** Is the research question or argument clear and well motivated?
-- **Methodological:** Is the design, method, or analysis appropriate?
-- **Structural:** Is the organization of the material effective?
+- **Conceptual:** Is the research question clear and well motivated?
+- **Methodological:** Is the method or analysis appropriate?
+- **Structural:** All about the organization of the material.
 - **Interpretive:** Are the results being interpreted appropriately?
-- **Presentation:** Is the writing, notation, or presentation clear?
+- **Editorial:** Is the writing, notation, or presentation clear?
 
 This helps me read efficiently and give you the kind of feedback you need. It is also fine to ask for more than one type of feedback, but please identify the most important one.
 
@@ -108,17 +98,16 @@ I will normally provide feedback on a selected section or research output rather
 
 Please contact me when you notice that progress is becoming difficult, rather than waiting until the next deadline. This includes situations where:
 
-- the research question no longer seems feasible;
-- the data or method is not working as expected;
-- results are disappointing or difficult to interpret;
-- you are unsure what to do next; or
+- the research question no longer seems feasible.
+- the data is not available.
+- results are disappointing.
 - personal circumstances are affecting your ability to work.
 
 When bringing a problem, it is helpful to include:
 
-1. a short description of the problem;
-2. what you have already tried;
-3. what you think may be causing it; and
+1. a short description of the problem.
+2. what you have already tried.
+3. what you think may be causing it.
 4. one or two possible ways forward, even if you are not confident about them.
 
 An unsuccessful result is useful information. A problem communicated early is usually much easier to address than one discovered immediately before a deadline.
@@ -127,38 +116,36 @@ An unsuccessful result is useful information. A problem communicated early is us
 
 Email is best for short questions, sharing material, and arranging meetings. Please put the main purpose of a message in the subject line and avoid sending the same request through several channels.
 
-I check email during designated working periods rather than continuously. Routine messages will normally receive a response within a few working days, but a response may not be immediate. If a matter is genuinely urgent, please say so clearly and explain why.
+I check email during designated working periods rather than continuously, so my replies may take a few working days and a response may not be immediate. If a matter is genuinely urgent, please say so clearly and explain why.
 
 Please also let me know about planned absences or circumstances that will substantially affect your progress. We can then adjust the timetable rather than allowing an unexpected delay to become a larger problem.
 
 ## Your responsibilities
 
-You are responsible for:
+At the risk of sounding patronizing, let me state that you are responsible for:
 
-- taking ownership of the project;
-- preparing for meetings;
-- keeping track of milestones and deadlines;
-- organizing your data, code, references, and drafts;
-- documenting your decisions and research process;
-- following appropriate standards of research integrity;
-- raising problems early; and
+- taking ownership of the project.
+- preparing for meetings.
+- keeping track of milestones and deadlines.
+- organizing your data, code, references, and drafts.
+- documenting your decisions.
+- following appropriate standards of research integrity.
+- raising problems early.
 - considering and responding to feedback.
 
 You are not expected to know everything in advance. Asking a well-formulated question is part of doing research.
 
 ## My responsibilities
 
-I will aim to:
+By the same token, I will aim to:
 
-- provide an intellectually supportive and respectful environment;
-- help you define a realistic and focused project;
-- give specific and constructive feedback;
-- identify technical or conceptual problems that require attention;
-- help you make progress without taking over the project;
-- be clear when a recommendation is important rather than optional; and
-- tell you as early as possible when I have concerns about scope, feasibility, or progress.
-
-I will also tell you when a question falls outside my expertise or when another source of support would be more appropriate.
+- help you define a realistic and feasible topic for your thesis.
+- give constructive feedback.
+- identify technical problems that require attention.
+- help you make progress without taking over the project.
+- be clear when a recommendation is important rather than optional.
+- tell you as early as possible when I have concerns about scope and feasibility.
+- tell you when a question falls outside my expertise.
 
 ## A simple preparation template
 
@@ -169,23 +156,14 @@ Progress since our last meeting:
 
 What I learned or decided:
 
-Current difficulties or uncertainties:
-
-Material attached or linked:
+Current difficulties:
 
 Feedback I would find most useful:
 
 Questions for the meeting:
-
-Proposed next steps:
 ```
 
 The goal is not to produce a formal report. A concise, honest update is more useful than a polished document that hides the main difficulties.
 
-<div class="supervision-callout supervision-callout-final">
-
-<strong>A good supervision meeting does not require everything to be going well.</strong> It requires that we know what is happening, identify what matters most, and agree on a sensible next step.
-
-</div>
 
 </div>
