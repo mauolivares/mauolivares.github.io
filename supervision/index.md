@@ -6,9 +6,9 @@ permalink: /supervision/
 sitemap: false
 ---
 
-<div class="supervision-guide">
+<div class="supervision-guide" markdown="1">
 
-<div class="supervision-intro">
+<div class="supervision-intro" markdown="1">
 
 # Working Together on Your Research Project
 
