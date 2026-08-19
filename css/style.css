@@ -110,6 +110,95 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 	font-family: 'Montserrat', Helvetica, sans-serif; }
 
 
+/* Supervision guide */
+.supervision-guide {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto 60px auto;
+	line-height: 1.7;
+}
+
+.supervision-guide h1 {
+	font-size: 38px;
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: 18px;
+}
+
+.supervision-guide h2 {
+	font-size: 26px;
+	margin-top: 42px;
+	margin-bottom: 16px;
+}
+
+.supervision-guide h3 {
+	font-size: 20px;
+	margin-top: 28px;
+}
+
+.supervision-guide p,
+.supervision-guide li {
+	font-size: 16px;
+}
+
+.supervision-guide li {
+	margin: 7px 0;
+}
+
+.supervision-intro {
+	border-bottom: 1px solid #d5d5d5;
+	margin-bottom: 28px;
+	padding: 28px 0 24px;
+}
+
+.supervision-intro p {
+	font-size: 18px;
+	line-height: 1.65;
+}
+
+.supervision-callout {
+	background: #f5f8fa;
+	border-left: 4px solid #428bca;
+	border-radius: 3px;
+	color: #58636e;
+	margin: 28px 0;
+	padding: 16px 20px;
+}
+
+.supervision-callout-final {
+	margin-top: 42px;
+}
+
+.supervision-guide code {
+	font-size: 14px;
+}
+
+.supervision-guide pre {
+	background: #f8f8f8;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	font-size: 14px;
+	line-height: 1.55;
+	margin: 20px 0;
+	padding: 18px 20px;
+	white-space: pre-wrap;
+}
+
+@media (max-width: 767px) {
+	.supervision-guide {
+		width: 100%;
+	}
+
+	.supervision-guide h1 {
+		font-size: 31px;
+	}
+
+	.supervision-guide h2 {
+		font-size: 23px;
+	}
+}
+
+
 © 2018 GitHub, Inc.
 Terms
 Privacy
